@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Symptoms of Brain Tumor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-image: url("{{ url_for('static', filename='images/dsm-5-criteria-for-generalized-anxiety-disorder-1393147-final-5cde49b87f644d4a9eb25ad7ab1ceae0.png') }}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+        }
+        .symptom {
+            margin-bottom: 30px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .symptom b {
+            font-size: 1.2em;
+            color: #2c3e50;
+        }
+        .symptom img {
+            max-width: 400px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+        h1 {
+            background-color: rgba(255, 255, 255, 0.85);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Common Symptoms of Brain Tumors</h1>
+
+    <div class="symptom">
+        <b>Nausea & Vomiting</b>
+        <p>
+            Nausea and vomiting occur frequently due to increased pressure inside the skull caused by the tumor. This pressure affects the brain's vomiting center, leading to persistent feelings of sickness and vomiting, which may worsen in the morning or after sudden head movements.
+        </p>
+        <img src="{{ url_for('static', filename='images/istockphoto-1367666334-612x612.jpg') }}" alt="Nausea and Vomiting" />
+    </div>
+
+    <div class="symptom">
+        <b>Weakness or Numbness in Limbs</b>
+        <p>
+            Tumors can press on nerves or areas of the brain controlling muscle movement and sensation. This results in weakness or numbness in the arms or legs, often on one side of the body, making it difficult to perform normal activities or maintain balance.
+        </p>
+        <img src="{{ url_for('static', filename='images/istockphoto-1364592426-612x612.jpg') }}" alt="Weakness or Numbness in Limbs" />
+    </div>
+
+    <div class="symptom">
+        <b>Speech Difficulties</b>
+        <p>
+            When the tumor affects language centers in the brain, patients may experience trouble forming words, slurred speech, or difficulty understanding others. This symptom often signals that the tumor is located near areas responsible for communication.
+        </p>
+        <img src="{{ url_for('static', filename='images/istockphoto-1402725864-612x612.jpg') }}" alt="Speech Difficulties" />
+    </div>
+
+    <div class="symptom">
+        <b>Personality or Memory Changes</b>
+        <p>
+            Brain tumors can impact parts of the brain responsible for emotions, behavior, and memory. Patients may show noticeable personality changes, mood swings, confusion, or memory loss, affecting daily life and relationships.
+        </p>
+        <img src="{{ url_for('static', filename='images/istockphoto-883739846-612x612.jpg') }}" alt="Personality or Memory Changes" />
+    </div>
+
+</body>
+</html>

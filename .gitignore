@@ -1,0 +1,8 @@
+venv/
+uploads/
+Mriimages/
+models/
+*.h5
+*.db
+__pycache__/
+.env

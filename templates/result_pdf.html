@@ -1,0 +1,19 @@
+<!-- templates/result_pdf.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PDF Result</title>
+    <style>
+        body { font-family: sans-serif; padding: 30px; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>MRI Tumor Detection Report</h1>
+    <p><strong>Username:</strong> {{ username }}</p>
+    <p><strong>Date:</strong> {{ date }}</p>
+    <p><strong>Result:</strong> {{ result }}</p>
+    <p><strong>Confidence:</strong> {{ confidence }}%</p>
+</body>
+</html>

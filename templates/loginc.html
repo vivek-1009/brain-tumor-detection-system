@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Choice</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bg-custom {
+      background-image: url('https://thumbs.dreamstime.com/z/team-friendly-professional-doctors-offering-their-helping-hand-people-sunny-clinic-physicians-ready-to-help-213874925.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+    }
+
+    .form-label {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    .form-control {
+      border-radius: 5px;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .btn-primary {
+      background-color: #ff7e5f;
+      border-color: #ff7e5f;
+    }
+
+    .btn-primary:hover {
+      background-color: #feb47b;
+      border-color: #feb47b;
+    }
+
+    a {
+      color: #ff7e5f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 576px) {
+      .card {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body class="bg-custom">
+  <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card shadow-lg p-4 w-100" style="max-width: 400px;">
+      <div class="card-body">
+        <h2 class="text-center text-primary mb-4">Login Panel / लॉगिन पैनल</h2>
+
+        <!-- User Login Button -->
+        <form method="get" action="{{ url_for('login') }}" class="mb-3">
+          <button type="submit" class="btn btn-primary w-100">User Login / उपयोगकर्ता लॉगिन</button>
+        </form>
+
+        <!-- Doctor Login Button (optional, make sure route exists) -->
+        <form method="get" action="{{ url_for('doctorregister') }}">
+          <button type="submit" class="btn btn-primary w-100">Doctor Login / डॉक्टर लॉगिन</button>
+        </form>
+
+        <!-- Register Link -->
+        <p class="mt-4 text-center">
+          No account? <a href="{{ url_for('register') }}">Register here</a> / खाता नहीं है? <a href="{{ url_for('register') }}">पंजीकरण करें</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
