@@ -29,4 +29,54 @@ authentication, and data storage.
 
 
 
-## 📂 Project Structure
+📂 Project Structure
+brain-tumor-detection-system/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── static/
+├── templates/
+├── utils/
+└── database/
+
+
+---
+
+How to Run the Project
+
+1. Clone the repository
+```bash
+git clone https://github.com/vivek-1009/brain-tumor-detection-system.git
+cd brain-tumor-detection-system
+
+Clone the repository
+python -m venv venv
+
+
+Windows
+2. Run The Command
+venv\Scripts\activate
+
+3️.Install dependencies
+pip install -r requirements.txt
+
+4. Run the application
+python main.py
+
+5️. Open in browser
+http://127.0.0.1:5000
+
+
+⚠️ Disclaimer
+
+This project is created for educational and learning purposes only.
+It is not intended for real medical diagnosis or clinical use.
+
+# Author
+
+Vivek
+
+GitHub: https://github.com/vivek-1009
+
+LinkedIn: https://linkedin.com/in/vivek-dhingra
